@@ -9,7 +9,7 @@ $(function(){
     } )
   });
 
-  $('#submitWords').on('submit', function(e){
+  $('#submitWords').on('submit', function(e) {
     e.preventDefault();
 
     var adjective = $("input[name=adjective]").val();
