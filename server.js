@@ -33,6 +33,19 @@ app.get('/adjective', function(req, res) {
  res.json(getRandomWord(adjective));
 });
 
+app.get('/verb', function(req, res) {
+ res.json(getRandomWord(verb));
+});
+
+app.get('/noun', function(req, res) {
+ res.json(getRandomWord(noun));
+});
+
+app.post('/adjective', function(req, res) {
+  console.log(req.body);
+  res.json({word: 'hi'});
+});
+
 app.listen(port, function() {
  console.log('server available at http://localhost: ' + port);
 });
