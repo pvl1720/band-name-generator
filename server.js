@@ -22,7 +22,7 @@ function getRandomWord (object) {
  return {word: randomProp};}
 
 app.get('/', function(req, res) {
- res.send('thug life!');
+ res.send('Helloooooo!');
 });
 
 app.get('/adjective', function(req, res) {
